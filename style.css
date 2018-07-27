@@ -1,24 +1,42 @@
-body{
+body {
+  background: no-repeat center fixed;
+  background-size: cover;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: 100% 1000px;
 }
-.unexploded{
-  background-image: url("./img/simcity.jpg");
+
+.unexploded {
+  background-image: url('img/simcity.jpg');
 }
-.exploded{
-  background-image: url("./img/explosion.jpg");
+
+/* instead of changing bg-img, change class */
+.exploded {
+  background-image: url('img/explosion.jpg');
 }
-#title{
-  display: none;
-  text-align: center;
-  color: white;
-}
-#timer{
-  color: chartreuse;
-}
-#box{
-  background-color: black;
-  display: inline-block;
+
+#box {
+  background-color: #333;
   padding: 20px 10px 30px 10px;
+  display: inline-block;
+}
+
+/* TODO fix this container not showing */
+#timerContainer {
+  background-color: black;
+}
+
+#timer {
+  color: green;
+}
+
+#init {
+  background-color: grey;
+}
+
+#init:hover {
+  background-color: #fff;
+  color: red;
+}
+
+#message {
+  color: #fff;
 }

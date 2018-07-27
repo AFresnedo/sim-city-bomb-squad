@@ -7,12 +7,25 @@
     <script src="bomb.js"></script>
   </head>
   <body class="unexploded">
-    <div id="box">
-      <img id="blue" src="./img/uncut-blue-wire.png">
-      <img id="green" src="./img/uncut-green-wire.png">
-      <img id="white" src="./img/uncut-white-wire.png">
-      <img id="red" src="./img/uncut-red-wire.png">
-      <img id="yellow" src="./img/uncut-yellow-wire.png">
+    <div id="wireBox">
+      <!-- TODO finish changing id to something unique and using data-color -->
+      <img id="blue" src="img/uncut-blue-wire.png" data-color:"blue">
+      <img id="green" src="img/uncut-green-wire.png" data-color:"green">
+      <img id="red" src="img/uncut-red-wire.png" data-color:"red">
+      <img id="white" src="img/uncut-white-wire.png" data-color:"white">
+      <img id="yellow" src="img/uncut-yellow-wire.png" data-color:"yellow">
     </div>
+    <div id="timerContainer">
+      <h2 id="timer">0</h2>
+      <!-- could do "try again" instead and hide until game over -->
+      <button id="init">Initiate</button>
+    </div>
+    <h1 id="message"></h1>
+
+    <audio id="explodeSound" src="sounds/BldgExplode.wav"></audio>
+    <audio id="siren" src="sounds/Siren.wav" loop></audio>
+    <audio id="buzz" src="sounds/Electricity.wav"></audio>
+    <audio id="cheer" src="sounds/CrowdYay.wav"></audio>
+    <audio id="success" src="sounds/success.ogg"></audio>
   </body>
 </html>
